@@ -1,0 +1,7 @@
+requests>=2.31
+beautifulsoup4>=4.12
+openpyxl>=3.1      # build_sheet.py — assembles the deliverable workbook (.xlsx)
+# optional — only needed for the accurate extraction pass (build_dataset.py --llm)
+# anthropic>=0.40
+# verify-only — evaluates the workbook's formulas to check they compute (not needed to build)
+# formulas>=1.3

@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+
+# Backup copies (created before an in-place rewrite; not meaningful in diffs)
+*.bak
+
+# Office lock/temp files (created while an .xlsx is open)
+~$*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Auto-generated time tracking (mutates every prompt; not meaningful in diffs)
+time_log.csv
+TIMESHEET.md
+
+# Crawler cache & working data (raw HTML, large; reproducible from code)
+data/cache/
+data/raw/
+*.log
+
+# Per-ruling text dumps for the extraction pass (~9MB; regenerate: python3 dump_rulings.py)
+data/rulings/
+data/rulings_manifest.json
+
+# Reviews / narrations (published as artifacts; kept untracked)
+reviews/
+data/out/quarantine.csv
